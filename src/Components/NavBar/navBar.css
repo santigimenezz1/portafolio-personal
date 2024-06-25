@@ -1,0 +1,56 @@
+.navBar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.274) 0px 0.3px;
+    z-index: 1000; /* Asegura que el z-index sea lo suficientemente alto */
+  }
+  
+  .content {
+    margin-top: 60px; /* Asegura que el contenido no se oculte detrás de la barra */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo para ver el efecto */
+    backdrop-filter: blur(5px); /* Agrega desenfoque al contenido */
+  }
+  
+
+
+
+.navBar__enlaces{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navBar__enlaces ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    user-select: none;
+
+}
+.navBar__logo h1{
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  user-select: none;
+}
+.navBar__enlaces ul li{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+    letter-spacing: 1.5px;
+}
+
+.navBar__enlaces ul li:hover{
+   border-color: rgb(249, 196, 107);
+}
+.navBar__logo h1{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
